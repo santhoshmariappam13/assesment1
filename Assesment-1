@@ -1,0 +1,582 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header
+        {   
+            background-color: white;
+            color: black;
+            padding: 1rem;
+           
+        }
+        body{
+            font-family:Volkhov,Poppins;
+            color: black,rgb(66, 66, 66);
+        }
+        nav{
+            display: flex;
+            row-gap: 2rem;
+            font-family:poppins;
+            justify-content: space-around;
+            align-items: center;
+            margin: 1rem;
+        }
+        .nav-links a 
+        {
+        color: black;
+        text-decoration: none;
+        margin: 2rem;
+      }
+      .nav-links a:hover 
+      {
+        color:#FD8D3A;
+      }
+      .logger{
+
+      .log { color:#FD8D3A;
+        text-decoration: none;
+        padding: 1rem;
+      }
+      .log :hover {
+        color:orangered;
+      }
+
+      .cta-clicker{
+        padding: 8px;
+        margin: 0;
+        background-color: #FD8D3A;
+        color: white;
+        border-color: #FD8D3A;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font: weight 400px;
+
+      }
+      .cta-clicker:hover{
+        background-color: #FD8D3A;
+      }
+    }
+      .a{
+        background-color: white;
+        color: rgb(66, 66, 66);
+        padding: 1rem;
+        text-align: start;
+      }
+      .a h1{
+        font-family:"Volkhov", serif;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        padding-left: 6rem;
+      }
+      .image{
+        float:inline-end;
+        padding-left: 1rem;
+        width: 585px;
+        height: 385px;
+        margin: 0;
+      }
+      
+
+      .a p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding-left: 6rem;
+      }
+      .cta-button {
+        padding: 1rem;
+        margin-left: 5rem;
+        background-color:white;
+        color: orangered;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: bold; 
+      }
+       .cta-button:hover {
+        background-color:#FD8D3A;
+      }
+      .main{
+            display: flex;
+            row-gap: 2rem;
+            justify-content: space-around;
+            text-align: center;
+            margin-left: 15rem;
+      }
+      .holder{
+        background-color: white;
+        margin-top: 6rem;
+      }
+      .content-holder{
+        display: flex;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        padding-right: 6px;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+      }
+      .select-group{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      .label{
+        font-weight: 500;
+        font-size: 16px;
+        color: #222222;
+      
+      }
+      .option{
+        margin: 0 45px 0 45px;
+        display: inline-block;
+        
+      }
+      .option span{
+        color: #FA7436;
+
+      }
+      .sub-label{
+        font-size: 12px;
+        color: #666666;
+        
+      }
+      .button-holder button{
+        background-color: #FA7436;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        border-color: white;
+        margin-top: 9px;
+      }
+
+       .b h1{
+        font-family:"Volkhov", serif;
+        font-size: 2rem;
+        margin-top: 10rem;
+        padding-left: 16rem;
+        text-align: center;
+
+      }
+      .imageb {
+        float:inline-end;
+        width: 179px;
+        height: 130px;
+        margin-right: 22rem;
+      }
+      .b-p{
+        font-family: "poppins";
+        font-size: 0.8rem;
+        text-align: center;
+        padding-left: 16rem;
+        margin-top: 2rem;
+      }
+      .imageb2-column{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        margin-top: 2rem;
+      }
+      .imageb2{
+        width: 250px;
+        height: 150px;
+        margin-bottom: 20px;
+        background-image:"file:///C:/Users/ASUS/Downloads/Vector%204855.svg";
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .imageb2-element{
+            width: 27px;
+            height: 30px;
+            margin-left: 7rem;
+            margin-top: 14px;
+        }
+      .imageb2-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 5px;
+        
+      }
+      .imageb2-p{
+        font-family: "poppins";
+        font-size: 0.6rem;
+       text-align: center;
+      }
+       .imageb22{
+        width: 250px;
+        height: 150px;
+        margin-bottom: 20px;
+        background-image:"file:///C:/Users/ASUS/Downloads/Vector%204855.svg";
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .imageb22-element{
+            width: 27px;
+            height: 30px;
+            margin-left: 7rem;
+            margin-top: 14px;
+        }
+      .imageb22-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 5px;
+        
+      }
+      .imageb22-p{
+        font-family: "poppins";
+        font-size: 0.6rem;
+       text-align: center;
+      }
+       .imageb23{
+        width: 250px;
+        height: 150px;
+        margin-bottom: 20px;
+        background-image:"file:///C:/Users/ASUS/Downloads/Vector%204855.svg";
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .imageb23-element{
+            width: 27px;
+            height: 30px;
+            margin-left: 7rem;
+            margin-top: 14px;
+        }
+      .imageb23-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 5px;
+        
+      }
+      .imageb23-p{
+        font-family: "poppins";
+        font-size: 0.6rem;
+       text-align: center;
+      }
+       .c h1{
+        font-family:"Volkhov", serif;
+        font-size: 2rem;
+        margin-top: 8rem;
+        padding-top: 10rem;
+        padding-left: 0;
+        margin-bottom: 8px;
+      }
+      .c-p{
+        font-family: "poppins";
+        font-size: 0.8rem;
+        text-align: center;
+        
+      }
+      .image-c-column{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        margin-top: 2rem;
+      }
+      .image-c{
+        width: 150px;
+        height: 200px;
+        margin-bottom: 100px;
+        background-image:url('C:\Users\ASUS\Downloads\Image (2).png');
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .image-c-element{
+            width: 127px;
+            height: 130px;
+            margin-left: 10.5px;
+            margin-top: 14px;
+        }
+      .image-c-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: start;
+        padding:8px;
+        margin-bottom: 5px;
+        
+      }
+      .image-c-p{
+        font-family: "poppins";
+        font-size: 0.6rem;
+       text-align: center;
+      }
+      .image-c-icon{
+            width: 10px;
+            height: 10px;
+            margin-left: 10.5px;
+            margin-top: 14px;
+
+        }
+        .image-c-p2{
+        font-family: "poppins";
+        color: #666666;
+        font-size: 0.6rem;
+        padding-left: 2px;
+        font-weight: 600;
+        padding-top: 0;
+        }
+        .image-c-t{
+        font-family: "poppins";
+        font-size: 0.6rem;
+        padding-left: 20;
+        text-align:end;
+        font-weight: 600;
+        padding-top: 0;
+        }
+        .img-c-slider{
+          width: 8rem;
+         height: 50px;
+         margin-top: 2rem;
+         margin-left: 40rem;
+        }
+       .d-h1{
+        font-family:"Volkhov", serif;
+        font-size: 2rem;
+        margin-top: 10rem;
+        text-align: center;
+        margin-left: 2rem;
+
+      }
+      .image-d {
+        display: inline-block;
+        width: 40px;
+       height: 45px;
+       margin-right: 0rem;
+
+      }
+      .d-p{
+        font-family: "poppins";
+        font-size: 0.8rem;
+        text-align: center;
+       
+        margin-top: 2rem;
+      }
+      .imaged2-column{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        margin-top: 2rem;
+      }
+      .imaged2{
+        width: 220px;
+        height: 200px;
+       
+        background-image:url('C:\Users\ASUS\Downloads\Image (2).png');
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .imaged2-element{
+          width: 180px;
+          height: 130px;
+      
+        }
+      .imaged2-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: start;
+        padding:8px;
+        margin-bottom: 5px;
+      }
+      .image-d-icon{
+            margin-left: 10.5px;
+            margin-top: 14px;
+      }
+      .imaged2-p{
+        font-family: "poppins";
+        justify-items: start;
+        color: #666666;
+        font-size: 0.6rem;
+        padding-left: 2px;
+        font-weight: 600;
+        padding-top: 0;
+        padding-right: 39px;
+      }
+       .imaged22{
+        width: 220px;
+        height: 200px;
+        margin-bottom: 100px;
+        background-image:url('C:\Users\ASUS\Downloads\Image (2).png');
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .imaged22-element{
+          width: 160px;
+          height: 130px;
+        }
+      .imaged22-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: start;
+        padding:8px;
+        margin-bottom: 5px;
+        
+      }
+      .imaged22-p{
+        font-family: "poppins";
+        justify-items: start;
+        color: #666666;
+        font-size: 0.6rem;
+        padding-left: 2px;
+        font-weight: 600;
+        padding-top: 0;
+        padding-right: 39px;
+      }
+       .imaged23{
+        width: 220px;
+        height: 200px;
+        margin-bottom: 100px;
+        background-image:url('C:\Users\ASUS\Downloads\Image (2).png');
+        background-size: cover;
+        box-shadow: 0 4px 4px 0 rgb(109, 107, 107)
+        }
+        .imaged23-element{
+          width: 160px;
+          height: 130px;
+        }
+      .imaged23-h{
+        font-family:"poppins";
+        font-size: 0.8rem;
+        text-align: start;
+        padding:8px;
+        margin-bottom: 5px;
+        
+      }
+      .imaged23-p{
+        font-family: "poppins";
+        justify-items: start;
+        color: #666666;
+        font-size: 0.6rem;
+        padding-left: 2px;
+        font-weight: 600;
+        padding-top: 0;
+        padding-right: 39px;
+      }
+</style>
+    </head>
+    <body>
+        <header>
+           <nav>
+            <img src="C:\Users\ASUS\Downloads\Logo.png"width="130px",height="24px"/>
+            <div class="nav-links">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Destination</a>
+              <a href="">Tour</a>
+              <a href="">Blog</a>
+            </div>
+            <div class="logger">
+              <a class="log" href="">Login</a>
+            <a href=""class="cta-clicker">sign up</a>
+            </div>
+            
+          </nav>
+          
+        </header>
+
+        <section class ="a">
+            <h1>
+              <img class="image"src="C:\Users\ASUS\Downloads\Image (1).png"/>
+            
+                Get started your<br/>
+                exciting <span style="color:#FA7436;">journey</span><br/>
+                with us.
+                
+            </h1>
+            <p>
+                A Team of experienced tourism professionals will <br/>
+                provide you with the best advice and tips for your<br/>
+                 desire place. 
+            </p>
+            <br/>
+            <a href="" class="cta-button">Discover now</a>
+        </section>
+        <div class="main">
+          <div class="holder">
+            <div class="content-holder">
+              <div class="select-group">
+                     <div class="option">
+                      <div class="label">Location<span><img src="file:///C:/Users/ASUS/Downloads/Vector%204855.svg" width="10px",height=10px/></span></div>
+                      <div class="sub-label">Where are you going?</div>
+                     </div>
+
+                     <div class="option">
+                      <div class="label">Date<span><img src="file:///C:/Users/ASUS/Downloads/Vector%204855.svg" width="10px",height=10px/></span></div>
+                      <div class="sub-label">When will you go?</div>
+                     </div>
+
+                     <div class="option">
+                      <div class="label">Guest<span><img src="file:///C:/Users/ASUS/Downloads/Vector%204855.svg" width="10px",height=1px/></span></div>
+                      <div class="sub-label">Number of guest</div>
+                     </div>
+
+                     <div class="button-holder"><button>Explore now</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b">
+          <h1>Things you need <span style="color: #FD8D3A;">to do</span>
+            <img class="imageb" src="C:\Users\ASUS\Downloads\Element.png"/>
+          </h1>
+          <p class="b-p">We ensure that you’ll embark on a perfectly planned,<br/>
+             safe vacation at a price you can afford. </p>
+             <div class="imageb2-column"> 
+              <div class="imageb2"><span><img class="imageb2-element"src="C:\Users\ASUS\Downloads\Group.svg"/></span><h2 class="imageb2-h">Sign Up</h2><br/><p class="imageb2-p">Completes all the work associated<br/> with planning and processing</p></div>
+              <div class="imageb2"><span><img class="imageb22-element"src="file:///C:/Users/ASUS/Downloads/Group%20(1).svg"/></span><h2 class="imageb22-h">Worth of Money</h2><br/><p class="imageb22-p">After successful access then book <br/> from exclusive deals & pricing</p></div> 
+              <div class="imageb2"><span><img class="imageb23-element"src="C:\Users\ASUS\AppData\Local\Temp\Rar$DIa1136.20731\Group.png"/></span><h2 class="imageb23-h">Exciting Travel</h2><br/><p class="imageb23-p">Start and explore a wide range of  <br/> exciting travel experience</p></div>   
+                   
+            </div>
+
+            <div class="c">
+              <h1>Exclusive <span style="color: #FA7436;">deals & discounts</span></h1>
+
+              <p class="c-p">Discover our fantastic early booking discounts <br/>
+                & start planning your journey. </p>
+                <div class="image-c-column"> 
+              <div class="image-c"><span><img class="image-c-element"src="C:\Users\ASUS\Downloads\Image (2).png"/></span><h2 class="image-c-h">Madrid  4.8<span><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/></span><br/></h2>
+                   <span class="image-c-icon"><img src="file:///C:/Users/ASUS/Downloads/Vector.svg" width="8px" height="8px"/><span class="image-c-p2">Spain<span class="image-c-t">$̶9̶5̶0̶  <span style="color: #FD8D3A;">;"$850</span></span></span></span></div>
+              <div class="image-c"><span><img class="image-c-element"src="C:\Users\ASUS\Downloads\Image (3).png"/></span><h2 class="image-c-h">Firenze  4.5<span><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/></span></h2>
+                   <span class="image-c-icon"><img src="file:///C:/Users/ASUS/Downloads/Vector.svg" width="8px" height="8px"/><span class="image-c-p2">Italy<span class="image-c-t">$̶6̶9̶9̶  <span style="color: #FD8D3A;">$599</span></span></span></span></div>
+              <div class="image-c"><span><img class="image-c-element"src="C:\Users\ASUS\Downloads\Image (4).png"/></span><h2 class="image-c-h">Paris  4.4<span><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/></span></h2>
+                   <span class="image-c-icon"><img src="file:///C:/Users/ASUS/Downloads/Vector.svg" width="8px" height="8px"/><span class="image-c-p2">France<span class="image-c-t">$̶9̶5̶0̶  <span style="color: #FD8D3A;">$750</span></span></span></span></div>
+              <div class="image-c"><span><img class="image-c-element"src="C:\Users\ASUS\Downloads\Image (5).png"/></span><h2 class="image-c-h">London  4.8<span><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/></span></h2>
+                <span class="image-c-icon"><img src="file:///C:/Users/ASUS/Downloads/Vector.svg" width="8px" height="8px"/><span class="image-c-p2">Uk<span class="image-c-t">$̶8̶5̶0̶  $850</span></span></span></div>
+            </div>
+
+        <img class="img-c-slider"src="C:\Users\ASUS\Downloads\Slider-btn.png" ></img>   
+
+             
+        <div class="d-h1">
+          <h1>Best  <span style="color: #FD8D3A;">vacation plan</span>
+            <img class="image-d" src="C:\Users\ASUS\Downloads\Vector (1).png"/><img class="image-d" src="C:\Users\ASUS\Downloads\Vector (1).png"/>
+          </h1>
+          <p class="d-p">Plan your perfect vacation with our travel agency. Choose  <br/>
+            among hundreds of all-inclusive offers!   <br/>  <img class="img-c-slider"src="C:\Users\ASUS\Downloads\Slider-btn.png" ></img>   </p>
+             <div class="imaged2-column"> 
+              <div class="imaged2"><span><img class="imaged2-element"src="C:\Users\ASUS\OneDrive\Pictures\Image (10).png"/></span><h2 class="imaged2-h">Rome, Italty<span style="color: #FA7436;">   $5,42k</span></h2>
+                         <span class="image-d-icon"><img src="C:\Users\ASUS\Downloads\Navigation.png" width="8px" height="8px"/><span class="imaged2-p">10 days trip</span><span class="image-d-t"><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/><span class="imaged2-p">4.8</span></div>
+              <div class="imaged2"><span><img class="imaged22-element"src="C:\Users\ASUS\Downloads\Image (7).png"/></span><h2 class="imaged22-h">London, Uk<span style="color: #FA7436;">      $2,42k</span></h2>
+                         <span class="image-d-icon"><img src="C:\Users\ASUS\Downloads\Navigation.png" width="8px" height="8px"/><span class="imaged2-p">07 days trip</span><span class="image-d-t"><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/><span class="imaged2-p">4.7</span></div> 
+              <div class="imaged2"><span><img class="imaged23-element"src="C:\Users\ASUS\Downloads\Image (8).png"/></span><h2 class="imaged23-h">Osako, Japan<span style="color: #FA7436;">     $5,42k</span> </h2>
+                         <span class="image-d-icon"><img src="C:\Users\ASUS\Downloads\Navigation.png" width="8px" height="8px"/><span class="imaged2-p">10 days trip</span><span class="image-d-t"><img src="file:///C:/Users/ASUS/Downloads/star%201.svg" width="10px" height="10px"/><span class="imaged2-p">4.8</span></div>
+             
+            </div>
+         
+      </body>
+</html>
+
+
+
+<!--  -->
